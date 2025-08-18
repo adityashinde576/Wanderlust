@@ -1,12 +1,12 @@
- body {
-    font-family: "plus jakarta sans", sans-serif !important;
-} 
+/* Global font */
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
 
-
-
-.navbar{
-    height:5rem;
-    background-color:white ;
+/* Navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
 }
 
 .fa-compass-drafting {
@@ -18,64 +18,75 @@
     color: #222222 !important;
 }
 
-/*footer */
-.f-info-links a{
+/* Footer */
+.f-info-links a {
     text-decoration: none;
     color: #222222;
 }
 
-.f-info-links a:hover{
+.f-info-links a:hover {
     text-decoration: underline;
 }
 
 .f-info-links,
 .f-info-socials,
-.f-info-brand
-{
-    width:100%;
+.f-info-brand {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-.f-info-socials i{
+.f-info-socials i {
     font-size: 1.2rem;
     margin-right: 1rem;
 }
+
 .f-info {
     text-align: center;
     height: 8rem;
     background-color: #ebebeb;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    align-items: space-evenly;        
+    justify-content: space-evenly;   /* ✅ fix */
+    align-items: center;            /* ✅ valid value */
 }
 
-/*cards*/
-.card{
-    border: none!important;
+/* Cards */
+.card {
+    border: none !important;
     margin-bottom: 2rem;
+    font-weight: 400;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* hover effect */
 }
 
-.card-img-top{
-    border-radius: 1rem!important;
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-radius: 1rem 1rem 0 0 !important;
     width: 100% !important;
+    height: 200px;
     object-fit: cover !important;
+    transition: transform 0.3s ease;
 }
 
-.card-body{
-    padding:0 !important ;
+.card:hover .card-img-top {
+    transform: scale(1.05);
 }
 
-.card{
-    font-weight: 400;
+.card-body {
+    padding: 0.8rem 1rem !important;
 }
 
-.card-text p{
-    font-weight: 400;
+.card-text {
+    font-weight: 400; /* ✅ fixed selector */
 }
-.listing-link{
-    text-decoration: ;
+
+/* Listing links */
+.listing-link {
+    text-decoration: none;
+    color: inherit;
 }
