@@ -1,8 +1,13 @@
 /* Global font */
 body {
     font-family: "Plus Jakarta Sans", sans-serif !important;
+    flex-direction: column;
+    min-height: 100vh;   
 }
 
+.container {
+    flex:1;
+}
 /* Navbar */
 .navbar {
     height: 5rem;
@@ -89,4 +94,26 @@ body {
 .listing-link {
     text-decoration: none;
     color: inherit;
+}
+
+.add-btn {
+    background-color:#fe424d !important;
+    border:none !important;
+}
+.edit-btn{
+    background-color:#fe424d !important;
+    border:none !important;
+}
+
+/*Show Page*/
+.show-img{
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+}
+.show-card{
+    padding:0 ;
+    padding-right:0;
 }
